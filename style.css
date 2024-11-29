@@ -1,0 +1,251 @@
+
+:root{
+    --blueBlack : #2f2E33;
+    --coolGray : #D5D6D2;
+    --white : #FFFFFF;
+    --blueCobalt : #3A5199;
+    --lightBlueCobalt : #4a68bf;
+    --darkBlueCobalt : #3A5199;
+    --bootstrapColor: #7952B3;
+    --instagramColor: #ac2bac;
+    --fontWeightThin : 100;
+    --fontWeightLight : 300;
+    --fontWeightRegular: 400;
+    --fontWeightMedium : 500;
+    --fontWeightBold : 700; 
+    --fontWeightBlack : 900;
+}
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*#region NAVBAR*/
+
+.navbar{
+    transition: all 3.0s;
+}
+
+/*navbar style when scroling down*/
+.navbar-scrolled {
+    background-color: var(--blueBlack);
+    box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
+
+}
+
+/*Text color of navbar main text*/
+  #navbarHeader{
+    color: var(--blueCobalt);
+    font-weight: var(--fontWeightBold);
+}
+
+/*nav-link general*/
+.navbar-custom .navbar-nav .nav-link{
+    color:var(--lightBlueCobalt);
+}
+
+/*nav-links active*/
+.navbar-custom .nav-item .nav-link.active{
+    color:var(--blueCobalt);
+    font-weight: var(--fontWeightMedium);
+}
+
+/*nav-links visited*/
+.navbar-custom .nav-item .nav-link:visited{
+  color:var(--darkBlueCobalt);
+  font-weight: var(--fontWeightMedium);
+}
+
+/*nav-links hover inactive*/
+.navbar-custom .nav-item:hover .nav-link{
+    color:var(--darkBlueCobalt);
+    font-weight: var(--fontWeightMedium);
+}
+
+/*nav-links hover active*/
+.navbar-custom .nav-item:hover .nav-link.active{
+    color:var(--darkBlueCobalt);
+    font-weight: var(--fontWeightBold);
+}
+/*#endregion NAVBAR*/
+
+/*#region HEADER*/
+
+header {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  font-weight: var(--fontWeightBold);
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+header .container .d-flex .w-100 .display-3{
+  font-weight: var(--fontWeightMedium);
+}
+
+header .container .d-flex .w-100 .lead.mb-0{
+  font-weight: var(--fontWeightMedium);
+}
+
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+  /*#endregion HEADER*/
+  
+  /*#region CAROUSEL*/
+
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
+}
+
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/*background image Bio*/
+.carousel-item:nth-child(1){
+  background-image: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*background image competences*/
+.carousel-item:nth-child(2){
+  background-image: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*background image projects*/
+.carousel-item:nth-child(3){
+  background-image: ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  #mycarousel{
+    height: 100%;
+  }
+
+  /*#endregion CAROUSEL*/
+
+  /*#region BODY*/
+  backgroundimage{
+    display:block;
+    background-image: url(Media/vecteezy_small-hexagon-shape-with-random-black-metallic-color_7741356.jpg);
+    max-height: 500px;
+    max-width: 3000px;
+    width:auto;
+    height:auto;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+
+  #first{
+    
+  }
+  #second{
+    
+  }
+
+  /*#endregion BODY*/
+  
+  /*#region FOOTER*/
+  /*IG text*/
+  .py-5.bg-dark .container.text-light.text-center .mb-3.p-2.instaText{
+      color: var(--instagramColor); 
+      font-weight: var(--fontWeightBold); 
+    }
+  
+  /*BS text*/
+  .py-5.bg-dark .container.text-light.text-center .mb-3.p-2.bootstrapText{
+    color: var(--bootstrapColor); 
+    font-weight: var(--fontWeightBold); 
+  }
+  
+  /*#endregion FOOTER*/
+  
+  /*#region MEDIA*/
+
+  @media (max-width:1000px){
+    .navbar-toggler{
+      background-color: black;
+      box-shadow: 0 3px 10px rgba(0,  0,  0,  0.15);
+    }
+  }
+
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  }
+  /*#endregion MEDIA*/
+  
+  
